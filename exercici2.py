@@ -2,8 +2,6 @@
 # Després de cada comentari escriu el codi corresponent
 # 2.1 crea una llista de llistes per emmagatzemar entre 2 i 4 tasques pendents del dia d’avui assignant a cada tasca un temps en minuts. Per exemple:
 # tasques_pendents = [[35,"estudiar python"] ,[20,"plegar roba"] ]
-
-#
 #2.2 mostra el temps assignat a la segona tasca
 #2.3 mostra el número total de tasques
 #2.4 mostra el nom de la última tasca
