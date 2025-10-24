@@ -14,18 +14,18 @@ print(notes) #[1,4,7,2,3,9]
 
 #1.3 mostra el valor de la última posició (utilitza len() per calcular la última posició)
 posicion = len(notes) - 1 ##guardo en una variable l'utlima posicio
-notes[posicion] # valor de la posicio 9
+print(notes[posicion]) # valor de la posicio 9
 
 #1.4 utilitza index() per buscar i mostrar en quina posició està el número 4
-posicio = [notes.index(4)] ## [1,4,7,2,3,9]
-print(posicio) # numero de posicio del valor 4: 1
+posicio = notes.index(4) ## [1,4,7,2,3,9]
+print(posicio) # numero de posicio del valor 4 ens mostrarà: 1
 
 #1.5 utilitza append per afegir un nou valor al final de la llista i mostra-la
 notes.append(0)
 print(notes) ## [1,4,7,2,3,9,0]
 
 #1.6 utilitza insert() per afegir el valor 88 després del 4 i mostra la llista
-posicion = notes.index(4)
+posicion = notes.index(4) + 1 # Sumo una posicion para que sea después del 4, no en su lugar
 notes.insert(posicion,88) ## [1,4,88,7,2,3,9,0]
 print(notes)
 
@@ -46,18 +46,20 @@ notes.reverse()
 print(notes)
 
 #1.11 utilitza sum() i len() per calcular i mostrar el valor mitg dels valors dins l'array
-posicion = len(notes) - 1
-suma = 0
-for i in notes[posicion]:
-    posicion -= i
-media = int (suma / 5)
+suma = sum(notes) #puedo sumar los valores de la lista con la funcion sum()
+quantitatDeNotes = len(notes) #Para hacer la media necesito saber cuantas notas hay
+media = suma / quantitatDeNotes
 print(media)
 
 #1.12 mostra el valor situat al mig de l'array , si l'array te un número parell, 
 # #arrodoneix la posició del mig cap amunt
-posicions = len(notes)
-if(posicions%0):
-    mig = int(posicions/2)
-    print(notes[mig])
-#elif(!posicions%0):
+posicions = len(notes) #para saber cuantas posiciones tiene la lista
+if posicions % 2 == 0: #Si el resto es 0, es par
+    mig = int(posicions + 1)    
+else:
+    mig = posicions/2
+    mig = int(round(mig))
+print(notes[round(posicions)]) ##REVISAR!!!!!!!!!!!!!!
+
+
 
