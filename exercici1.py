@@ -53,13 +53,17 @@ print(media)
 
 #1.12 mostra el valor situat al mig de l'array , si l'array te un número parell, 
 # #arrodoneix la posició del mig cap amunt
+#https://www.w3schools.com/python/python_math.asp
+import math
 posicions = len(notes) #para saber cuantas posiciones tiene la lista
+mig = 0
 if posicions % 2 == 0: #Si el resto es 0, es par
-    mig = int(posicions + 1)    
+    mig = posicions / 2
+    mig = math.ceil(mig) #Per arrodonir cap amunt   
 else:
-    mig = posicions/2
-    mig = int(round(mig))
-print(notes[round(posicions)]) ##REVISAR!!!!!!!!!!!!!!
+    mig = posicions / 2
+    mig = math.floor(mig) #Per arrodonir cap avall
+print(notes[mig])
 
 
 
