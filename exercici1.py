@@ -35,7 +35,7 @@ print(total) #resposta una vegada: 1
 
 #1.8 utilitza pop() per treure i mostrar el valor en la última posició
 ultimo = notes.pop() # Abans: ## [1,4,88,7,2,3,9,0]
-print(ultimo) ## Ara [1,4,88,7,2,3,9,0]
+print(ultimo) ## Ara [1,4,88,7,2,3,9]
 
 #1.9 utilitza remove() per treure el valor 2 de l'array i mostra la llista
 notes.remove(2)
