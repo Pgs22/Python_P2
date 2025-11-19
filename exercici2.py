@@ -13,7 +13,7 @@ print("Temps assignat a la segona tasca ", tasques_pendents[1][0]) # Temps assig
 print("Número total de tasques ", len(tasques_pendents)) # Número total de tasques 3
 
 #2.4 mostra el nom de la última tasca
-ultima = tasques_pendents.pop() #Resultat de l'última posició de la llista principal
+ultima = len(tasques_pendents) -1 #Resultat de l'última posició de la llista principal
 print("Nom de la última tasca: ", tasques_pendents[ultima][1]) # posició 1 de la subllista on està el text
 
 #2.5 assigna a la segona tasca un temps de 66 minuts i mostra la llista
