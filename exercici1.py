@@ -65,5 +65,14 @@ else:
     mig = math.floor(mig) #Per arrodonir cap avall
 print(notes[mig])
 
+"""otra forma de hacer el ejercicion 1.12
+sin usar el math
+Porque si es positivo no hace falta redondear para arriba porque el indice empeiza desde el 0 no desde el 1 como cuenta el len()
+Y si es impar no hace falta restar porque ya se quedaria en medio de la lista al redondear con int() y por lo mismo del indice
+necesitamos un numero entero para indicar la posicion en el array por eso la conversion, ya que es un float al hacer la division"""
+posiciones = len(notes)
+media = posiciones / 2
+redondear = int(media)
+print(notes[redondear])
 
 
