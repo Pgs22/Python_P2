@@ -51,5 +51,6 @@ tasca_eliminada = tasques_pendents.pop(1) # posicion 1 es la segona tasca que el
 print(tasques_pendents) #[[25, "estudiar css"], [66, "plegar roba"], [35, "estudiar python"]]
 
 #2.11 treu la 2a tasca amb remove()
-tasques_pendents.remove(tasques_pendents[1]) #El remove busca i elimina, podem fer-ho a la vegada
+tarea_a_borrar = tasques_pendents[1]
+tasques_pendents.remove(tarea_a_borrar) #El remove busca i elimina, podem fer-ho a la vegada
 print(tasques_pendents) #[[25, "estudiar css"], [35, "estudiar python"]]
